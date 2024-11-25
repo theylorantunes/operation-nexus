@@ -1,46 +1,132 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="css/style.css">
     <script src="scripts/script.js"></script>
-    <link rel="shortcut icon" type="imagex/png" href="./sources/opnexus.ico">
-
+    <link rel="shortcut icon" type="image/png" href="./sources/opnexus.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Operação Nexus</title>
+
 </head>
 <body>
-
     <header>
         <span class="menu-icon" onclick="openMenu()">☰</span>
-        <img id="logoheader" src="sources/opnexus.png" alt="logoheader">
-        <h1>Operação Nexus</h1> 
+        <a href="index.html"><img id="logoheader" src="sources/opnexus.png" alt="logoheader"></a>
     </header>
-
     <div id="menu" class="menu">
         <a href="#" class="closebtn" onclick="closeMenu()">&times;</a>
-        <a href="#">Home</a>
-        <a href="#">Sobre</a>
-        <a href="#">Serviços</a>
-        <a href="#">Contato</a>
+        <a href="index.html">Página Inicial</a>
+        <a href="#o-que-somos">O que somos?</a> 
+        <a href="#servicos-nexus">Serviços</a>
+        <a href="#solucoes-nexus">Soluções</a>
+        <a href="#politicas-nexus">Políticas</a>
+        <a href="#contato-nexus">Contato</a>
+    </div>
+    <div id="main" class="inicio">
+        <div class="overlay"></div>
+        <div class="logo-container">
+            <img src="sources/logotipo nexus branco.png" alt="Logo" class="logo"> 
+            <p class="logo-text">Unindo processos. Otimizando conexões.</p>
+        </div>
+    </div>
+    <div class="sobre-section" id="o-que-somos"> 
+        <h2>O que somos?</h2>
+        <p>A Operação Nexus é uma iniciativa estratégica, desenvolvida como projeto, que busca integrar tecnologia e processos para otimizar a eficiência e colaboração em ambientes empresariais, visando um contexto onde a modernização das operações e a inovação são fundamentais para garantir crescimento sustentável e competitivo dentro do universo corporativo. Com isso, a estrutura do software foi projetada em detalhar os principais elementos visuais e estruturais da identidade digital da empresa, e em como cada componente do seu design refletirá a missão e o objetivo da Nexus.</p>
+        <div class="sobre-section" id="nossa-missao">
+            <h2>Nossa missão</h2>
+            <p>Proporcionar soluções inovadoras e integradas para empresas, utilizando tecnologias de ERP e CRM para otimizar processos, aumentar a produtividade e promover a sustentabilidade nos negócios.</p>
+        </div>
+        <div class="sobre-section" id="nossa-visao">
+            <h2>Nossa visão</h2>
+            <p>Contribuindo para integração de tecnologia empresariais, à nossa visão é ser reconhecido como líder em soluções tecnológicas empresariais, transformando a maneira como as empresas gerenciam seus processos e relações com clientes, com foco em eficiência, colaboração e sustentabilidade.</p>
+        </div>
+        <div class="sobre-section" id="nossos-valores">
+            <h2>Nossos valores</h2>
+            <p>Nosso Valor: Visamos contribuir na comunicação, produtividade e a tomada de decisões dentro da nossa empresa, com a nossa integração de dados e automação de processos unindo tecnologias e processos, criando uma ambiente conectado e produtivo.</p>
+        </div>
     </div>
 
-    <div id="main" class="inicio">
-        
-        <div id="main">
-            <div class="overlay"></div>
-            <div class="logo-container">
-                <img src="sources/logotipo nexus branco.png" alt="Logo" class="logo"> 
-                <p class="logo-text">Unindo processos. Otimizando conexões.</p>
+    <div class="imagem-texto-section" style="background-color: #35096c; padding: 20px;">
+        <div class="container">
+            <div class="imagem-container">
+                <img src="sources/servicos.png" alt="Imagem" class="imagem">
+            </div>
+            <div class="texto-container" id="servicos-nexus">
+                <h2 class="titulo">Nossos Serviços</h2>
+                <ul>
+                    <li><strong>Análise de Necessidades</strong>: Identificação das necessidades tecnológicas e de processos dos clientes.</li>
+                    <li><strong>Planejamento de Integração</strong>: Desenvolvimento de um plano para integração de sistemas e processos.</li>
+                    <li><strong>Desenvolvimento de Software</strong>: Criação ou customização de software para necessidades específicas.</li>
+                    <li><strong>Implementação de Sistemas</strong>: Instalação e configuração de sistemas de gestão e automação.</li>
+                    <li><strong>Integração de Dados</strong>: Garantia de fluxo de dados entre sistemas, evitando duplicações.</li>
+                    <li><strong>Automação de Processos</strong>: Implementação de fluxos de trabalho automatizados.</li>
+                    <li><strong>Treinamento de Usuários</strong>: Capacitação dos funcionários no uso das novas tecnologias.</li>
+                    <li><strong>Suporte Técnico</strong>: Suporte contínuo para resolução de problemas.</li>
+                    <li><strong>Monitoramento de Sistemas</strong>: Acompanhamento do desempenho dos sistemas integrados.</li>
+                    <li><strong>Otimização de Processos</strong>: Melhoria contínua para aumentar a eficiência.</li>
+                    <li><strong>Coleta e Análise de Dados</strong>: Coleta e análise de dados para insights valiosos.</li>
+                    <li><strong>Relatórios e Dashboards</strong>: Criação de relatórios e dashboards para decisões informadas.</li>
+                </ul>
             </div>
         </div>
     </div>
-    
-    
+    <div class="imagem-texto-section" style="background-color: #f9f9f9; padding: 20px;">
+        <div class="container">
+            <div class="imagem-container">
+                <img src="sources/solucoes.png" alt="Imagem" class="imagem"> <!-- Substitua "nova-imagem.png" pela imagem desejada -->
+            </div>
+            <div class="texto-container" id="solucoes-nexus">
+                <h2 class="titulo" style="color: black;">Nossas Soluções</h2>
+                <p>Oferecemos soluções personalizadas que se adaptam às necessidades de cada cliente, garantindo um atendimento de excelência e resultados eficazes.</p>
+                <ul style="color: black;">
+                    <li><strong>Desconhecimento das Necessidades</strong>: Falta de clareza sobre as necessidades dos clientes.</li>
+                    <li><strong>Sistemas Silos</strong>: Dificuldade na troca de informações entre sistemas.</li>
+                    <li><strong>Soluções Genéricas</strong>: Ferramentas que não atendem às necessidades específicas.</li>
+                    <li><strong>Dados Duplicados</strong>: Informações inconsistentes e redundantes.</li>
+                    <li><strong>Tarefas Repetitivas</strong>: Perda de tempo com tarefas manuais.</li>
+                    <li><strong>Falta de Visibilidade</strong>: Dificuldade em identificar problemas de desempenho.</li>
+                    <li><strong>Ineficiência Operacional</strong>: Desperdício de recursos e tempo.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <section class="politicas" id="politicas-nexus">
+        <h2>Políticas da Empresa</h2>
+        <p>
+            Na Operação Nexus, estamos comprometidos em manter os mais altos padrões de ética e integridade em todas as nossas operações. 
+            Nossas políticas são projetadas para garantir a transparência, a responsabilidade e a conformidade com as leis e regulamentos aplicáveis. 
+            Valorizamos a privacidade e a segurança das informações de nossos clientes e parceiros, e nos esforçamos para proteger todos os dados que nos são confiados.
+        </p>
+        <p>
+            Além disso, promovemos um ambiente de trabalho inclusivo e respeitoso, onde todos os colaboradores são incentivados a contribuir com suas ideias e a se desenvolverem profissionalmente. 
+            Acreditamos que a diversidade é uma força que impulsiona a inovação e o sucesso da empresa.
+        </p>
+        <strong><p style="text-align: center;">
+            Para mais informações sobre nossas políticas, entre em contato conosco ou consulte nosso site.
+        </p></strong>
+    </section>
+    <footer class="footer" id="contato-nexus">
+        <div class="footer-left">
+            <div class="footer-info">
+                <h4>Endereço</h4>
+                <p>Avenida Juscelino Kubitschek 123</p>
+                <p>São Paulo, SP, Brasil</p>
+            </div>
+            <div class="footer-hr">
+                <h4>Horário de Atendimento</h4>
+                <p>Segunda a Sexta<br> das 9:00 às 18:00.</p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <h4>Contatos Virtuais</h4>
+            <p>E-mail: contato@operacaonexus.com.br</p>
+            <p>Telefone: +55 (11) 1234-5678</p>
+            <p>WhatsApp: +55 (11) 98765-4321</p>
+        </div>
+    </footer>
 </body>
 </html>

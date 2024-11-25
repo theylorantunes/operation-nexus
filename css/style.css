@@ -1,9 +1,8 @@
-body{
-
-font-family: Arial, Helvetica, sans-serif;
-color: #000;
-margin: 0;
-
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    margin: 0;
+    background-color: #f8f9f8;
 }
 
 header {
@@ -45,27 +44,19 @@ header {
     background-color: #575757; 
 }
 
-.openbtn {
-    font-size: 20px; 
-    cursor: pointer; 
-}
-
 #main {
-    width: 1920px; 
-    height: 750px; 
+    width: 100%; 
+    height: 630px; 
     padding: 16px; 
     box-sizing: border-box; 
-    transition: margin-left .5s; 
     display: flex; 
     flex-direction: column; 
     align-items: center; 
-    
-
     background-image: url("/sources/fundo_home-page.png");
     background-size: cover;
     background-position: center; 
-
     color: #fff;
+    transition: margin-left 0.5s; 
 }
 
 #logoheader {
@@ -73,12 +64,8 @@ header {
     margin-right: 13px;
 }
 
-.inicio{
-
+.inicio {
     background-color: #35096c;
-    background-image: url('/sources/fundo_homepage.png'); 
-    background-size: cover; 
-    background-position: center; 
 }
 
 .logo-container {
@@ -102,9 +89,140 @@ header {
     margin-top: 50px;
 }
 
-.montserrat{
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
+.overlay {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+    display: none; 
+}
+
+.sobre-section {
+    padding: 20px; 
+    background-color: #f9f9f9; 
+    color: #333; 
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+.sobre-section h2 {
+    font-family: "Montserrat", sans-serif; 
+    font-size: 28px; 
+    margin-bottom: 15px; 
+}
+
+.sobre-section p {
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 500;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.imagem-texto-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.imagem-container {
+    flex: 1;
+    padding: 0;
+}
+
+.imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-left: 75px;
+}
+
+.texto-container {
+    flex: 2;
+    color: white;
+    text-align: center; 
+}
+
+.titulo {
+    margin-bottom: 20px;
+}
+
+.texto-container ul {
+    font-size: 1.2em; 
+    line-height: 1.5; 
+    padding: 0; 
+    list-style-type: none;
+}
+
+.texto-container ul li {
+    text-align: center; 
+    margin-bottom: 10px;
+}
+
+ul{
+    margin-left: 50px;
+}
+
+.politicas {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #35096c;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.politicas h2 {
+    color: #35096c;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    text-align: center; 
+}
+
+.politicas p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin: 10px 0; 
+    text-align: justify;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between; 
+    padding: 20px;
+    background-color: #35096c; 
+    color: white; 
+}
+
+.footer-left {
+    display: flex; 
+    flex: 1;
+}
+
+.footer-info, .footer-hr {
+    margin: 0 5px; 
+    flex: 1; 
+}
+
+.footer h4 {
+    margin: 5px 0;
+}
+
+.footer p {
+    margin: 3px 0;
 }
