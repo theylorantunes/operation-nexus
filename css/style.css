@@ -44,20 +44,6 @@ header {
     background-color: #575757; 
 }
 
-#main {
-    width: 100%; 
-    height: 630px; 
-    padding: 16px; 
-    box-sizing: border-box; 
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    background-image: url("/sources/fundo_home-page.png");
-    background-size: cover;
-    background-position: center; 
-    color: #fff;
-    transition: margin-left 0.5s; 
-}
 
 #logoheader {
     width: 35px;
@@ -65,16 +51,19 @@ header {
 }
 
 .inicio {
-    background-color: #35096c;
+    background-color: #35096c; /* Cor de fundo padrão */
+    background-image: url("/sources/fundo_home-page.png"); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Faz a imagem cobrir toda a área da div */
+    background-position: center; /* Centraliza a imagem */
+    height: 630px; /* Altura desejada */
+    position: relative; /* Para posicionar elementos internos */
+    color: white; /* Cor do texto */
+    display: flex; /* Para centralizar o conteúdo */
+    flex-direction: column; /* Para empilhar o conteúdo verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
 }
 
-.logo-container {
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    position: relative; 
-    z-index: 2; 
-}
 
 .logo {
     height: 350px; 
